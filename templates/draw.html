@@ -1,0 +1,9 @@
+{% extends "layout.html" %} {% block title %} StudentID {% endblock %} {%block
+content %}
+<h1>Drawing a pyramid of {{ count }} *</h1>
+
+<div class="text-center">
+  {% for line in stars %} {{ line }}<br />
+  {% endfor %}
+</div>
+{% endblock %}

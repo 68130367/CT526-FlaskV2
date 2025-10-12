@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+
+    <title>{% block title %}My Awesome Site{% endblock %}</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="info">Django with CSS</div>
+      <div class="navigator">
+        <a href="/">Home</a>
+        <a href="/tech">Tech</a>
+        <a href="/myid">ID</a>
+        <a href="/draw/7">Draw</a>
+      </div>
+    </div>
+    <main>
+      <div class="container">{% block content %} {%endblock %}</div>
+    </main>
+    <footer class="footer">
+      <p>&copy; 2025 - My Flask Project by Nuttasan Kotchawat</p>
+    </footer>
+  </body>
+</html>
