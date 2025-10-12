@@ -12,3 +12,5 @@
 - สร้าง Layout กลาง (layout.html) เพื่อใช้ร่วมกัน
 - สร้างหน้าเว็บโดยสืบทอดจาก Layout
 - เพิ่มสีสันล์ด้วย CSS
+
+# run project by using this command `python app.py`
